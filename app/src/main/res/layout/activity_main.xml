@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".view.MainActivity">
+
+    <ImageView
+        android:id="@+id/mc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hero" />
+
+    <ImageView
+        android:id="@+id/rival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rival" />
+
+    <ImageView
+        android:id="@+id/Nextbutton"
+        android:layout_width="130dp"
+        android:layout_height="116dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/next_turn_button" />
+
+    <ImageView
+        android:id="@+id/skill_button"
+        android:layout_width="88dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/skill_button" />
+
+    <TextView
+        android:id="@+id/hero_hp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/font"
+        android:text="HP:"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hero_hp_value" />
+
+    <TextView
+        android:id="@+id/hero_mp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/font"
+        android:text="MP:"
+        android:textColor="#ADD8E6"
+        app:layout_constraintEnd_toEndOf="@+id/hero_hp_text"
+        app:layout_constraintStart_toStartOf="@+id/hero_hp_text"
+        app:layout_constraintTop_toBottomOf="@+id/hero_hp_text" />
+
+    <TextView
+        android:id="@+id/mons_hp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="110dp"
+        android:fontFamily="@font/font"
+        android:text="HP:"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mons_mp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/font"
+        android:text="MP:"
+        android:textColor="#ADD8E6"
+        app:layout_constraintEnd_toEndOf="@+id/mons_hp_text"
+        app:layout_constraintStart_toStartOf="@+id/mons_hp_text"
+        app:layout_constraintTop_toBottomOf="@+id/mons_hp_text" />
+
+    <TextView
+        android:id="@+id/hero_hp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/font"
+        android:text="102321"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toEndOf="@+id/hero_hp_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hero_mp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/font"
+        android:text="10"
+        android:textColor="#ADD8E6"
+        app:layout_constraintBottom_toBottomOf="@+id/hero_mp_text"
+        app:layout_constraintStart_toEndOf="@+id/hero_mp_text"
+        app:layout_constraintTop_toTopOf="@+id/hero_mp_text" />
+
+    <TextView
+        android:id="@+id/mons_hp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/font"
+        android:text="32131"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toEndOf="@+id/mons_hp_text"
+        app:layout_constraintTop_toTopOf="@+id/mons_hp_text" />
+
+    <TextView
+        android:id="@+id/mons_mp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/font"
+        android:text="10"
+        android:textColor="#ADD8E6"
+        app:layout_constraintBottom_toBottomOf="@+id/mons_mp_text"
+        app:layout_constraintStart_toEndOf="@+id/mons_mp_text"
+        app:layout_constraintTop_toTopOf="@+id/mons_mp_text" />
+
+    <TextView
+        android:id="@+id/dialogue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:text="Start Game! "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Nextbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <TextView
+        android:id="@+id/hero_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/font"
+        android:text="You"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/Nextbutton"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="@+id/hero_mp_value"
+        app:layout_constraintTop_toTopOf="@+id/dialogue_text" />
+
+    <TextView
+        android:id="@+id/mons_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/font"
+        android:text="Sindel"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/mons_mp_text"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toEndOf="@+id/Nextbutton"
+        app:layout_constraintTop_toTopOf="@+id/dialogue_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
